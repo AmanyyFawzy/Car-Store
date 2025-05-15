@@ -1,0 +1,12 @@
+.contact form{
+    width:374px;
+    height:266px;
+}
+
+.contact form input{
+    margin-bottom: 12px;
+    background-color: var(--bg-input);
+    width: 374px;
+    height: 56px;
+}
+

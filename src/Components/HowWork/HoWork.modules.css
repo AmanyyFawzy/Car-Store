@@ -1,0 +1,24 @@
+
+h5{
+    white-space: nowrap;
+}
+
+
+/*Bottom-Bar Style Animation*/
+.bottom-bar {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+.bottom-bar img{
+    margin-left: 80px !important;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

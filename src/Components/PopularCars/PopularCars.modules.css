@@ -1,0 +1,36 @@
+
+/*Input Search*/
+
+.input-container{
+    position: relative;
+}
+input{
+    padding: 12px 12px 12px 32px;
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0;
+    outline: none;
+    border-radius: 12px;
+}
+.input-container button{
+    position: absolute;
+    bottom:12px;
+    right:20px;
+}
+.input-container i{
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    color: #8a8787;
+}
+
+.product{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 405px !important;
+}
+
+.product img{
+    width: 209px !important;
+    height: 91px !important;
+}
