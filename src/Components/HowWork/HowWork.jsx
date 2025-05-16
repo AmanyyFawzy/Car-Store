@@ -16,7 +16,7 @@ const steps=[
 export default function HowWork() {
   return (
     <>
-       <section className='mt-5 pb-4'>
+       <section className='mt-5 pb-4' id="howWork">
             {/*header section*/}
             <div className="header d-flex flex-column align-items-center pt-5">
                 <button className='text-primary py-3 px-3 fw-medium'>HOW IT WORK</button>

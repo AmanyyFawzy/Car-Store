@@ -1,12 +1,15 @@
 import Navbar from '../Navbar/Navbar';
-import { Outlet } from 'react-router-dom'
-
+import { Outlet, useLocation } from 'react-router-dom';
 
 export default function MasterLayout() {
+  const location = useLocation();
+
+  const hideNavOn = ['/AllCars']; 
+
   return (
     <>
-      <Navbar/>
-      <Outlet/>
+      {!hideNavOn.includes(location.pathname) && <Navbar />}
+      <Outlet />
     </>
-  )
+  );
 }

@@ -15,7 +15,7 @@ const experiences=[
 export default function WhyChooseUs() {
   return (
     <>
-      <section className='mt-5 pb-5'>
+      <section className='mt-5 pb-5' id="whyChooseUs">
 
         <div className="row d-flex align-items-center">
             {/*Image*/}

@@ -14,9 +14,9 @@ export default function Navbar() {
           {/*nav Lists*/}
           <ul className="navbar-nav d-none d-lg-flex flex-row">
             <li className="nav-item"><a className="nav-link px-3 " href="#">Become a renter</a></li>
-            <li className="nav-item"><a className="nav-link px-3" href="#">Rental deals</a></li>
-            <li className="nav-item"><a className="nav-link px-3" href="#">How it work</a></li>
-            <li className="nav-item"><a className="nav-link px-3" href="#">Why choose us</a></li>
+            <li className="nav-item"><a className="nav-link px-3" href="#rentalDeals">Rental deals</a></li>
+            <li className="nav-item"><a className="nav-link px-3" href="#howWork">How it work</a></li>
+            <li className="nav-item"><a className="nav-link px-3" href="#whyChooseUs">Why choose us</a></li>
           </ul>
           
           {/*nav form*/}

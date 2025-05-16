@@ -7,6 +7,7 @@ import CarImg4 from '../../assets/car4.svg'
 
 import './PopularCars.modules.css'
 import axios from 'axios';
+import Pagination from '../Pagination/Pagination';
 
 export default function PopularCars() {
 
@@ -32,7 +33,7 @@ export default function PopularCars() {
 
     return (
     <>
-        <section className="main container mb-5">
+        <section className="main container mb-5 mt-5" id="rentalDeals">
 
             {/*Search Component*/}
             <div className="input-container">
@@ -58,18 +59,18 @@ export default function PopularCars() {
                         const image = images[index % images.length];
                         return(
                             <>
-                                <div key={index} className="col-md-3 m-auto carProduct">
+                                <div key={index} className="col-10 col-md-3 m-auto carProduct">
                                     <div className="product p-4 rounded-4">
                                         <img src={image} alt="car" className='w-100 mb-3' />
-                                        <p>brand : {product.car}</p>
-                                        <p>car model : {product.car_model}</p>
-                                        <p>color : {product.car_color}</p>
-                                        <p>model year : {product.car_model_year}</p>
-                                        <p className='text-red'>Price : {product.price}</p>
-                                        <p>{product.availability}</p>
-                                        <button className='btn btn-primary w-100 d-flex align-items-center justify-content-center mt-4'>Rent Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                        <p className='fw-bold text-primary'><span>brand </span>: {product.car}</p>
+                                        <p><span>car model</span> : {product.car_model}</p>
+                                        <p><span>color</span> : {product.car_color}</p>
+                                        <p><span>model year</span> : {product.car_model_year}</p>
+                                        <p className='fs-5 fw-bold'><span className='fs-6'>Price</span> : {product.price}</p>
+                                        <button className='btn btn-primary w-100 d-flex align-items-center justify-content-center mt-4'>Rent Now <i className="fa-solid fa-arrow-right ms-2"></i></button>
                                     </div>
                                 </div>
+                               
                             </>
                         )
 
@@ -77,8 +78,8 @@ export default function PopularCars() {
                 </div>
 
                 {/* button display all cars*/}
-                <div className=" text-center mt-5">
-                    <button className="py-2 px-5 text-light"><Link to="AllCars" className='text-decoration-none'>Show More<i class="fa-solid fa-arrow-right ms-2"></i> </Link></button>
+                <div className="button text-center mt-5">
+                    <button><Link to="AllCars" className='text-decoration-none'>Show More<i className="fa-solid fa-arrow-right ms-2"></i> </Link></button>
                 </div>
             </section>
         </section>
